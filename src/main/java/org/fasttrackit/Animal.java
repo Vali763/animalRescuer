@@ -12,13 +12,13 @@ public class Animal {
 
     public Animal(String unNume, int oVarsta, int nivelSanatate, int nivelMancare, int nivelStare, String mancarePref,String activitateaPref )
     {
-        this.name = unNume;
-        this.age = oVarsta;
-        this.healthLevel = nivelSanatate;
-        this.hungerLevel = nivelMancare;
-        this.moodLevel = nivelStare;
-        this.prefFood = mancarePref;
-        this.prefActivity = activitateaPref;
+        setName(unNume);
+        setAge(oVarsta);
+        setHealthLevel(nivelSanatate);
+        setHungerLevel(nivelMancare);
+        setMoodLevel(nivelStare);
+        setPrefFood(mancarePref);
+        setPrefActivity(activitateaPref);
     }
 
 
@@ -48,6 +48,33 @@ public class Animal {
 
     public String getPrefActivity() {
         return prefActivity;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public void setHealthLevel(int healthLevel) {
+        this.healthLevel = healthLevel;
+    }
+
+    public void setHungerLevel(int hungerLevel) {
+        this.hungerLevel = hungerLevel;
+    }
+
+    public void setMoodLevel(int moodLevel) {
+        this.moodLevel = moodLevel;
+    }
+
+    public void setPrefFood(String prefFood) {
+        this.prefFood = prefFood;
+    }
+
+    public void setPrefActivity(String prefActivity) {
+        this.prefActivity = prefActivity;
     }
 
     public void afisare(){

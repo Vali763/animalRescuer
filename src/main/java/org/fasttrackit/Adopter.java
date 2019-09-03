@@ -5,7 +5,7 @@ public class Adopter extends Person {
 
     public Adopter(String name, double money) {
         super(name);
-        this.money = money;
+        setMoney(money);
     }
     public double getMoney() {
         return money;

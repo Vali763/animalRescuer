@@ -6,7 +6,7 @@ public class Vet extends Person {
 
     public Vet(String name, String specializare){
         super(name);
-        this.specialization = specializare;
+        setSpecialization(specializare);
     }
     public String getSpecialization() {
         return specialization;
