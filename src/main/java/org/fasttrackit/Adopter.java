@@ -1,20 +1,23 @@
 package org.fasttrackit;
 
-public class Adopter {
-    private String name;
+public class Adopter extends Person {
     private double money;
 
-    public Adopter(String nume, double bani){
-        this.name = nume;
-        this.money = bani;
-
+    public Adopter(String name, double money) {
+        super(name);
+        this.money = money;
     }
-
-    public String getName() {
-        return name;
-    }
-
     public double getMoney() {
         return money;
     }
+
+    public void setMoney(double money) {
+        this.money = money;
+    }
+
+    public void afisare(){
+        System.out.println("Nume adoptator: "+getName()+", avand bugetul de: "+getMoney()+" RON");
+    }
+
+
 }

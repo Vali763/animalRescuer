@@ -1,4 +1,5 @@
 package org.fasttrackit;
+import javax.swing.*;
 import java.util.Date;
 
 import java.util.Date;
@@ -30,5 +31,9 @@ public class AnimalFood {
 
     public boolean isAvailability() {
         return availability;
+    }
+
+    public void afisare(){
+        System.out.println("Nume mancare ["+getName()+"], pret["+getPrice()+"], cantitate["+getAmount()+" kg], stoc["+isAvailability()+"]");
     }
 }

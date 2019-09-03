@@ -10,4 +10,7 @@ public class RecreationalActivity {
     public String getName() {
         return name;
     }
+    public void afisare(){
+        System.out.println("Nume activitate de recreere ["+getName()+"]");
+    }
 }

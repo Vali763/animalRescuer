@@ -49,4 +49,8 @@ public class Animal {
     public String getPrefActivity() {
         return prefActivity;
     }
+
+    public void afisare(){
+        System.out.println("Nume animal ["+getName()+"], varsta ["+getAge()+"], nivel sanatate ["+getHealthLevel()+"], nivel mancare ["+getHungerLevel()+"], nivel stare ["+getMoodLevel()+"], mancare preferata ["+getPrefFood()+"], activitate preferata ["+getPrefActivity()+"]");
+    }
 }
